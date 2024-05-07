@@ -89,6 +89,7 @@ public class UserDaoHibernateImpl implements UserDao {
         return users;
     }
 
+
     @Override
     public void cleanUsersTable() {
         Session session = Util.getSessionFactory().openSession();
