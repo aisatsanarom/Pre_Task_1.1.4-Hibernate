@@ -22,15 +22,15 @@ public class UserServiceImpl implements UserService {
     }
     @Override
     public void removeUserById(long id) {
-//        userDaoHibernate.removeUserById(id);
+        userDaoHibernate.removeUserById(id);
     }
     @Override
     public List<User> getAllUsers() {
-//        return userDaoHibernate.getAllUsers();
-        return null;
+        return userDaoHibernate.getAllUsers();
+
     }
     @Override
     public void cleanUsersTable() {
-//        userDaoHibernate.cleanUsersTable();
+        userDaoHibernate.cleanUsersTable();
     }
 }
